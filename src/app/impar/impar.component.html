@@ -1,0 +1,21 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of array; let i = index">
+                    <td *ngIf="item['id']%2==1">{{item['id']}}</td>
+                    <td *ngIf="item['id']%2==1">{{item['name']}}</td>
+                    <td *ngIf="item['id']%2==1">{{item['email']}}</td>
+                    <td *ngIf="item['id']%2==1">{{item['body']}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
